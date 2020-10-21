@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HV</title>
+  <!--Hojas de Estilo-->
+  <link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">
+  
+</head>
+<body>
+  <div class="welcome">
+    <p id="nameUser"></p>
+  </div>
+  <div class="pageInit" id="pageInit">
+    <header class="header">
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#pag-1">Datos Personales</a></li>
+          <li><a href="#pag-2">Habilidades</a></li>
+          <li><a href="#pag-3">Proyectos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="textInit">
+      Proyecto Diplomado EAFIT
+    </div>
+  </div>
+  <section>
+    <article class="page" id="pag-1">
+      <div class="content">
+        <div class="">
+          <div>
+            <img src="../static/img/IMG_2330.jpeg" class="iam" alt="">
+          </div>
+          Wilson Ramirez Zuluaga
+          <br>
+          <address>
+            Dosquebradas Risaralda
+          </address>
+        </div>
+        <div class="datePersonal">
+            Instructor SENA hace 19 años aproximadamente, Actualmente soy Instructor de Instructor (Formador Pedagogico)
+        </div>
+        <div class="a">
+          <a href="#pageInit">Inicio</a>
+          <a href="#pag-2">Habilidades</a>
+          <a href="#pag-3">Proyectos</a>
+        </div>
+      </div>
+    </article>
+    <article class="page" id="pag-2">
+      <div class="content">
+        <div class="skills">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" width="400px" alt="PHP">
+          <img src="https://connortumbleson.com/content/images/2020/07/laravel-logolockup-rgb-red.png" width="400px" alt="">
+          <img src="https://cosasdedevs.com/media/sections/images/python.png" width="400px" alt="">
+          <img src="https://anthoncode.com/wp-content/uploads/2019/01/angular-logo-png.png" width="400px" alt="">
+          <img src="https://labviewwiki.org/w/images/thumb/2/2d/LV2019.png/256px-LV2019.png" width="300px" alt="">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/1280px-Arduino_Logo.svg.png" width="400" alt="">
+        </div>
+        <div class="a">
+          <a href="#pageInit">Inicio</a>
+          <a href="#pag-1">Datos Personales</a>
+          <a href="#pag-3">Proyectos</a>
+        </div>
+      </div>
+    </article>
+    <article class="page" id="pag-3">
+      <div class="content">
+        <div>
+          <img src="https://i2.wp.com/automotoresandina.com.co/wp-content/uploads/2019/11/cropped-Automotores-Andina-12-3.png?w=450&ssl=1" width="500" alt="">
+          <img src="http://proesas.co/wp-content/uploads/2018/11/Proesas-Proyectos-Estructurales-SAS-Constructora-Armenia-Quindio-1.png" width="500" alt="">
+          <a href="https://github.com/wramirez83/ControlKinect.git" class="containerText">
+            <img src="https://miro.medium.com/max/1125/1*dDNpLKu_oTLzStsDTnkJ-g.png" width="500" alt="Sordos Hablando">
+            <div class="textOver">
+                Sordos Hablando
+            </div>
+          </a>
+          <a href="https://github.com/wramirez83/appshopping.git" class="containerText">
+            <img src="https://miro.medium.com/max/1125/1*dDNpLKu_oTLzStsDTnkJ-g.png" width="500" alt="Administracion de Materiales">
+            <div class="textOver">
+                Materiales SENA
+            </div>
+          </a>
+
+        </div>
+
+        <div class="a">
+          <a href="#pageInit">Inicio</a>
+          <a href="#pag-1">Datos Personales</a>
+          <a href="#pag-2">Habilidades</a>
+        </div>
+      </div>
+    </article>
+  </section>
+  <footer>
+    Wilson Ramirez
+  </footer>
+  <script>
+    window.onload = init
+  </script>
+</body>
+</html>

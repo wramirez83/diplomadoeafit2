@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, url_for
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templat')
 app.root_path = os.path.dirname(os.path.abspath(__file__))
 
 @app.route('/')
