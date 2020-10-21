@@ -6,11 +6,11 @@
   <title>{{ title }}</title>
   <!--Hojas de Estilo-->
   <link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">
-  <script src="{{ url_for("static", filename="js/doc.css") }}"> </script>
+  <script src="{{ url_for("static", filename="js/doc.js") }}"> </script>
   
 </head>
 <body>
-  <div class="welcome">
+  <div class="">
     <p id="nameUser"></p>
   </div>
   <div class="pageInit" id="pageInit">
@@ -32,8 +32,8 @@
     <article class="page" id="pag-1">
       <div class="content">
         <div class="">
-          <div>
-            <img src="../static/img/IMG_2330.jpeg" class="iam" alt="">
+          <div id="divPhoto">
+            <img src="../static/img/IMG_2330.jpeg" class="iam" alt="" id="photo" onclick="imgs()">
           </div>
           Wilson Ramirez Zuluaga
           <br>

@@ -93,6 +93,7 @@ nav{
 .iam{
     width: 250px;
     border-radius: 150px;
+    transition: transform 0.25s linear;
 }
 .datePersonal{
     padding-top: 10px;
@@ -153,10 +154,12 @@ footer{
     font-style: oblique;
     text-align: right;
     background-color: #ffd57e;
-    width: 100%;
 }
 .welcome p{
-    padding-right: 20px;
+    background-color: #ffd57e;
+    padding: 20px;
+    margin: 20px;
+    
 }
 @font-face{
     font-family: "Sansita";
