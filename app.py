@@ -4,7 +4,7 @@ app = Flask(__name__, template_folder='templates', static_folder='static')
 
 @app.route('/')
 def init():
-    return "jajajajja"
+    return render_template('presentacion.html')
 
 @app.route('/hv')
 def index():
