@@ -3,6 +3,10 @@ from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 @app.route('/')
+def init():
+    return "jajajajja"
+
+
 def index():
     pagetitle = "Un resumen"
     return render_template('index.html', mytitle=pagetitle, mycontent="Hello World")
