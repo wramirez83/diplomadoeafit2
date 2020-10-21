@@ -6,10 +6,10 @@ app = Flask(__name__)
 def init():
     return "jajajajja"
 
-
+@app.route('/hv')
 def index():
     pagetitle = "Un resumen"
-    return render_template('index.html', mytitle=pagetitle, mycontent="Hello World")
+    return render_template('index.html')
 
 if __name__ == "__main__":
     app.run(debug=False)
