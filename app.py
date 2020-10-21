@@ -10,8 +10,8 @@ def init():
 
 @app.route('/hv')
 def index():
-    pagetitle = "Un resumen"
+    #pagetitle = "Un resumen"
     return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
