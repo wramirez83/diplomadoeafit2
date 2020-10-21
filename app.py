@@ -1,6 +1,8 @@
-from flask import Flask, render_template, url_for, Blueprint
+import os
+from flask import Flask, render_template, url_for
 
-app = Flask(__name__, template_folder='templates/', static_folder='static/')
+app = Flask(__name__, template_folder='templates', static_folder='static')
+app.root_path = os.path.dirname(os.path.abspath(__file__))
 
 @app.route('/')
 def init():
