@@ -1,6 +1,6 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, Blueprint
 
-app = Flask(__name__, template_folder='templates', static_folder='static')
+app = Flask(__name__, template_folder='templates/', static_folder='static/')
 
 @app.route('/')
 def init():
@@ -12,4 +12,4 @@ def index():
     return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
